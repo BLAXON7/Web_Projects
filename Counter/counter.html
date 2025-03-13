@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+         body {
+            flex-direction:column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe78f;
+        }
+        .Display {
+            width: 150px;
+            height: 60px;
+            border-radius: 8px;
+            align-items: center;
+            color: rgb(0, 42, 42);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 40px;
+            background-color: wheat;
+            border-width: 3px;
+            border-style: solid;
+            
+        }
+        .incdec
+        {
+            width: 165px;
+            height: 30px;
+        }
+        .buto:active
+        {
+            background-color: rgb(255, 203, 106);
+        }
+        .heading
+        {
+            border: black;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 3px;
+            border-color: rgb(141, 108, 0);
+            background-color: wheat;
+        }
+        .buto
+        {
+            width: 75px;
+            height: 30px;
+            margin-left: 5px;
+            border-radius: 8px;
+            align-items: center;
+            margin-top: 5px;
+            background-color: wheat;
+            border-width: 3px;
+            border-style: solid;
+            color: rgb(0, 42, 42);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading"style="">Counter</h1>
+    <button class="Display" id="Display1">0</button>
+    <div class="incdec">
+        <button  class="buto" onclick="incrementor()">+</button>
+        <button  class="buto" onclick="decrementor()">-</button>
+        
+    </div>
+    <script>
+        let countvariable = 0;
+        function incrementor() {
+            if(countvariable>=0)
+            countvariable += 1;
+            document.getElementById("Display1").innerText = countvariable;
+        }
+        function decrementor() {
+            if(countvariable>0)
+            
+            countvariable -= 1;
+            document.getElementById("Display1").innerText = countvariable;
+        }
+    </script>
+</body>
+</html>
