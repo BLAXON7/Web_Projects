@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="fullscreen">
+        <!-- <textarea class="InputSec"></textarea> -->
+         <input type="text" class="InputSec" id="butid" placeholder="0">
+        <div style="display:block;" class="first_tab">
+            <button onclick="appnum(7)" class="calc-buts">7</button>
+            <button onclick="appnum(8)" class="calc-buts">8</button>
+            <button onclick="appnum(9)" class="calc-buts">9</button>
+            <button onclick="appnum('+')" class="calc-buts">+</button>
+        </div>
+        <div class="second_tab">
+            <button  onclick="appnum(4)" class="calc-buts">4</button>
+            <button  onclick="appnum(5)" class="calc-buts">5</button>
+            <button  onclick="appnum(6)" class="calc-buts">6</button>
+            <button  onclick="appnum('−')" class="calc-buts">− </button>
+        </div>
+        <div class="third_tab">
+            <button  onclick="appnum(1)" class="calc-buts">1</button>
+            <button  onclick="appnum(2)" class="calc-buts">2</button>
+            <button  onclick="appnum(3)" class="calc-buts">3</button>
+            <button  onclick="appnum('×')" class="calc-buts">×</button>
+        </div>
+        <div class="fourth_tab">
+            <button  onclick="appnum(' ')" class="calc-buts">C</button>
+            <button  onclick="appnum(',')" class="calc-buts">CE</button>
+            <button  onclick="appnum('=')" class="calc-buts">=</button>
+            <button  onclick="appnum('÷')" class="calc-buts">÷</button>  
+        </div>
+
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
